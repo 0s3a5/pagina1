@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wallet</title>
+</head>
+<body>
+  <h1>My Wallet</h1>
+  <p>Current balance: <span id="balance">0</span></p>
+  <input type="number" id="amount" placeholder="Enter amount">
+  <button onclick="addMoney()">Add Money</button>
+
+  <script>
+    function addMoney() {
+      let amount = parseInt(document.getElementById("amount").value);
+      let balance = parseInt(document.getElementById("balance").innerText);
+      balance += amount;
+      document.getElementById("balance").innerText = balance;
+    }
+  </script>
+</body>
+</html>

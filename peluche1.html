@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluche 1</title>
+    <style>
+        body {
+            margin-top: 100px;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 500px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-container {
+        display: flex;
+        justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <button class="back-button">Back to Index</button>
+    <div class="container">
+        <img src="path/to/your/image.jpg" alt="Peluche 1">
+        <h2>Description of Peluche 1</h2>
+        <p>This is a description of the plush toy, including its features, materials, and any other relevant information. You can add more details here.</p>
+    </div>
+    <script>
+        const backButton = document.querySelector('.back-button');
+        backButton.addEventListener('click', () => {
+            window.location.href = 'index.html'; 
+        });
+    </script>
+    <div class="button-container">
+        <a href="compras.html" class="button">comprar</a>
+    </div>
+</body>
+</html>
